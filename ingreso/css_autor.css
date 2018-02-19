@@ -1,0 +1,16 @@
+label input {
+	float: right;
+	width: 68%;
+}
+label{
+	width: 100%;
+}
+.btn-group{
+	margin-bottom: 18px;
+}
+h2{
+	margin: 37px 0;
+}
+#provincia{
+	width: 68%;
+}

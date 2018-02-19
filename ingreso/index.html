@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Ingreso</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	 crossorigin="anonymous">
+	 <link rel="stylesheet" href="./css_autor.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	 crossorigin="anonymous"></script>
+	 <script src="./ajax.js"></script>
+	 <script src="./app.js"></script>
+</head>
+
+<body>
+
+	<div class="container row">
+
+		<form class="col-sm-4 form-signin" name="formCalPres">
+			<h2>Cálculo de préstamos</h2>
+			<div class="form-group">
+				<label for="importe">
+					<span>Importe</span>
+					<input type="number" min="0.00" max="10000.00" step="0.01" name="importe" id="importe" value="" />
+				</label>
+			</div>
+			<div class="form-group">
+				<label for="provincia">
+					<span>Provincia</span>
+					<select name="selectProv" id="provincia" class="form-control pull-right">
+					</select>
+				</label>
+			</div>
+			<div class="form-group">
+				<label for="interes">
+					<span>Taza de interes</span>
+					<input type="number" min="0.00" max="10000.00" step="0.01" name="interes" id="interes" value="" />
+				</label>
+			</div>
+			<div class="btn-group pull-right">
+				<button class="btn btn-sm btn-primary " type="button" id="calcular">CALCULAR</button>
+				<button class="btn btn-sm btn-primary " type="button" id="borrar">BORRAR</button>
+			</div>
+			<div class="form-group">
+				<label for="cuota">
+					<span>Cuota mensual</span>
+					<input type="text" name="cuota" id="cuota" value="">
+				</label>
+			</div>
+			<div class="form-group">
+				<label for="total">
+					<span>Total a pagar</span>
+					<input type="text" name="total" id="total" value="">
+				</label>
+			</div>
+			
+		</form>
+
+	</div>
+	<!-- /container -->
+</body>
+
+</html>
